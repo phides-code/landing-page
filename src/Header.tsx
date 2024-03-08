@@ -19,16 +19,15 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 1rem 0;
+    padding: 2.5rem 0 4rem;
 `;
 const LogoContainer = styled.div`
     display: flex;
-    align-items: center;
 `;
 
 const Logo = styled.img`
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
 `;
 
 export default Header;
