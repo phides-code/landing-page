@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import LandingPage from './LandingPage';
 
 const App = () => {
     const [isMobile, setisMobile] = useState<boolean>(false);
@@ -24,17 +25,17 @@ const App = () => {
         };
     }, []);
 
-    console.log('isMobile: ', isMobile);
-    return <Wrapper>Hello world </Wrapper>;
+    return (
+        <Wrapper>
+            <LandingPage isMobile={isMobile} />
+        </Wrapper>
+    );
 };
 
 const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100vh;
-    width: 100vw; */
-    border: 1px solid red;
 `;
 
 export default App;
