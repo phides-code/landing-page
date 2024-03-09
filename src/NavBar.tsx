@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { PrimaryColor } from './theme';
 
 const NavBar = () => {
     const navLinks = [
@@ -38,12 +39,14 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     color: white;
     width: 100%;
-    padding: 0 6.5rem;
 `;
 
 const StyledNavLink = styled.span`
     font-weight: bold;
     font-size: 1.125rem;
+    &:hover {
+        color: ${PrimaryColor};
+    }
 `;
 
 export default NavBar;

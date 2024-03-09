@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PrimaryColor } from './theme';
+import { PrimaryColor, SecondaryColor } from './theme';
 import downloadIcon from './assets/download-icon.svg';
 
 const LandingText = () => {
@@ -9,7 +9,7 @@ const LandingText = () => {
             <BigText>Smart Credit Card For Your Daily Life.</BigText>
             <DownloadButton>
                 Download
-                <img src={downloadIcon} alt='download icon' />
+                <DownloadIcon src={downloadIcon} alt='download icon' />
             </DownloadButton>
         </Wrapper>
     );
@@ -28,7 +28,6 @@ const SmallText = styled.div`
     font-size: 1.125rem;
 `;
 const BigText = styled.div`
-    text-align: justify;
     font-size: 3.438rem;
     font-weight: 600;
     padding: 1rem 0 2rem;
@@ -45,6 +44,14 @@ const DownloadButton = styled.button`
     border: none;
     background-color: ${PrimaryColor};
     border-radius: 10px;
+    &:hover {
+        background-color: ${SecondaryColor};
+        color: ${PrimaryColor};
+    }
+`;
+
+const DownloadIcon = styled.img`
+    margin: 0 0 0 0.5rem;
 `;
 
 export default LandingText;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import appScreenshot from './assets/app-screenshot.png';
 
-const AppScreenShot = () => {
+const DesktopAppScreenShot = () => {
     return (
         <Wrapper>
             <AppScreenShotImg src={appScreenshot} alt='app screenshot' />
@@ -19,4 +19,4 @@ const AppScreenShotImg = styled.img`
     height: 42rem;
 `;
 
-export default AppScreenShot;
+export default DesktopAppScreenShot;

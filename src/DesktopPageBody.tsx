@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import LandingText from './LandingText';
-import AppScreenShot from './AppScreenshot';
+import DesktopAppScreenShot from './DesktopAppScreenshot';
 
 const DesktopPageBody = () => {
     return (
         <Wrapper>
             <LandingText />
-            <AppScreenShot />
+            <DesktopAppScreenShot />
         </Wrapper>
     );
 };

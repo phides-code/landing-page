@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PrimaryColor } from './theme';
+import { PrimaryColor, SecondaryColor } from './theme';
 
 const ButtonsContainer = () => {
     return (
@@ -25,6 +25,10 @@ const LoginSignupButton = styled.button`
     border: none;
     background-color: ${PrimaryColor};
     border-radius: 10px;
+    &:hover {
+        background-color: ${SecondaryColor};
+        color: ${PrimaryColor};
+    }
 `;
 
 const Gap = styled.div`

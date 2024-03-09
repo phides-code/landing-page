@@ -1,12 +1,12 @@
 import DesktopLandingPage from './DesktopLandingPage';
+import MobileLandingPage from './MobileLandingPage';
 
 interface LandingPageProps {
     isMobile: boolean;
 }
 
 const LandingPage = ({ isMobile }: LandingPageProps) => {
-    console.log('isMobile: ', isMobile);
-    return <DesktopLandingPage />;
+    return isMobile ? <MobileLandingPage /> : <DesktopLandingPage />;
 };
 
 export default LandingPage;

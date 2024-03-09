@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import Header from './Header';
+import DesktopHeader from './DesktopHeader';
 import DesktopPageBody from './DesktopPageBody';
 
 const DesktopLandingPage = () => {
     return (
         <Wrapper>
-            <Header />
+            <DesktopHeader />
             <DesktopPageBody />
         </Wrapper>
     );
