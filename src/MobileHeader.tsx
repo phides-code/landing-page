@@ -2,14 +2,20 @@ import styled from 'styled-components';
 import logo from './assets/logo.png';
 import hamburgerLogo from './assets/hamburger-icon.png';
 
-const MobileHeader = () => {
+interface MobileHeaderProps {
+    setShowMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const MobileHeader = ({ setShowMenu }: MobileHeaderProps) => {
     return (
         <Wrapper>
             <LogoContainer>
                 <Logo src={logo} alt='logo' />
             </LogoContainer>
             <LogoContainer>
-                <HamburgerLogo src={hamburgerLogo} alt='hamburger-logo' />
+                <a href='#' onClick={() => setShowMenu(true)}>
+                    <HamburgerLogo src={hamburgerLogo} alt='hamburger-logo' />
+                </a>
             </LogoContainer>
         </Wrapper>
     );

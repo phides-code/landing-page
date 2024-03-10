@@ -1,32 +1,11 @@
 import styled from 'styled-components';
 import { PrimaryColor } from './theme';
+import { NavLinks } from './navlinks';
 
 const NavBar = () => {
-    const navLinks = [
-        {
-            name: 'Features',
-            destination: '#',
-        },
-        {
-            name: 'Pricing',
-            destination: '#',
-        },
-        {
-            name: 'Help',
-            destination: '#',
-        },
-        {
-            name: 'Blog',
-            destination: '#',
-        },
-        {
-            name: 'About us',
-            destination: '#',
-        },
-    ];
     return (
         <Wrapper>
-            {navLinks.map((navLink) => (
+            {NavLinks.map((navLink) => (
                 <StyledNavLink key={navLink.name}>{navLink.name}</StyledNavLink>
             ))}
         </Wrapper>
